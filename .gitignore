@@ -4,8 +4,8 @@
 .env
 
 # Compilación de .NET
-bin/
-obj/
+Finanzas/bin/
+Finanzas/obj/
 
 # Archivos de usuario y editores
 .vs/

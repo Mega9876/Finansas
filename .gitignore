@@ -1,0 +1,45 @@
+# Compilación y pruebas
+**/bin/
+**/obj/
+**/TestResults/
+**/coverage/
+*.coverage
+*.coveragexml
+*.trx
+artifacts/
+
+# IDE y configuración personal
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+*.sln.iml
+
+# Secretos y configuraciones locales (no ignorar appsettings.Development.json base)
+.env
+.env.*
+!.env.example
+**/appsettings.Local.json
+**/appsettings.*.Local.json
+**/secrets.json
+*.pfx
+*.p12
+*.pem
+*.key
+
+# Temporales y sistema
+*.log
+*.tmp
+*.bak
+*~
+.DS_Store
+Thumbs.db
+tmp/
+temp/
+.cache/
+__pycache__/
+# Migrations y dotnet-tools.json se versionan.

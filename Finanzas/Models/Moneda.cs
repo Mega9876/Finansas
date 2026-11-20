@@ -1,24 +1,10 @@
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+namespace Finanzas.Models;
 
-namespace Finanzas.Models
+public class Moneda
 {
-    [Table("monedas")]
-    public class Moneda
-    {
-        [Key]
-        [Column("id")]
-        [MaxLength(10)]
-        public string Id { get; set; } = string.Empty; // Ej: "BOB", "USD", "EUR"
+    public string Id { get;  set; } = string.Empty; // ISO 4217: "BOB", "USD"
+    public string Nombre { get;  set; } = string.Empty;
+    public string Simbolo { get;  set; } = string.Empty;
 
-        [Required]
-        [Column("nombre")]
-        [MaxLength(50)]
-        public string Nombre { get; set; } = string.Empty; // Ej: "Boliviano"
-
-        [Required]
-        [Column("simbolo")]
-        [MaxLength(10)]
-        public string Simbolo { get; set; } = string.Empty; // Ej: "Bs"
-    }
+    
 }

@@ -29,8 +29,8 @@ using (var scope = app.Services.CreateScope())
 }
 
 // Habilitar Swagger siempre (útil para probar en contenedor)
-app.UseSwagger();
-app.UseSwaggerUI();
+//app.UseSwagger();
+//app.UseSwaggerUI();
 
 app.UseAuthorization();
 app.MapControllers();

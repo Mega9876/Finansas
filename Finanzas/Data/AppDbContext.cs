@@ -12,7 +12,12 @@ namespace Finanzas.Data
 
         // Tu tabla
         public DbSet<Moneda> Monedas { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Cuenta> Cuentas { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Transaccion> Transacciones { get; set; }
 
-        // TODO: Tus compañeros agregarán aquí sus DbSet<OtraTabla>
+
+        
     }
 }
